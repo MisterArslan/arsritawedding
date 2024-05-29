@@ -1,1 +1,114 @@
-hi
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+
+<head>
+    <title>Arslan & Margarita: Wedding</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/buttons.css">
+    <link rel="stylesheet" type="text/css" href="/styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
+    <script>
+        var countDownDate = new Date("Jun 28, 2024 16:30:00").getTime();
+        setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var days_str = " д : ";
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var hours_str = " ч : ";
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var minutes_str = " м : ";
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var seconds_str = " с";
+
+            var element = document.getElementById("countdown");
+            element.innerHTML = "Осталось: " + days + days_str + hours + hours_str
+                + minutes + minutes_str + seconds + seconds_str;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <section class="container container--small" style="display: flex; justify-content: space-evenly;">
+        <h1>Арслан&#160</h1>
+        <img src="/images/heart2.png" width="8%"></img>
+        <h1>Маргарита</h1>
+    </section>
+
+    <section class="container container--medium">
+        <div class="parallax" data-parallax-image="/images/photo.jpg"></div>
+    </section>
+
+    <section class="container container--big">
+        <div class="infobox grid">
+            <h4><u>Дорогие друзья</u></h4>
+            <h5>
+                Приглашаем вас на свадебный банкет, посвященный нашему бракосочетанию.<br>
+                Мы будем очень рады, если вы разделите этот счастливый день с нами.<br>
+                Увидимся на нашей свадьбе!
+            </h5>
+            <h6></h6>
+        </div>
+        <div class="infobox grid">
+            <h4><u>Июнь 2024</u></h4>
+            <h5><img src="/images/date.png" style="width: 80%;"></img></h5>
+        </div>
+        <div class="infobox grid">
+            <h4><u>Программа</u></h4>
+            <h5 class="agenda">
+                16:30 - сбор гостей<br><br>
+                17:00 - выездная церемония<br><br>
+                17:30 - праздничный банкет
+            </h5>
+            <h6 id="countdown"></h6>
+        </div>
+    </section>
+
+    <section class="container container--medium">
+        <div class="parallax" data-parallax-image="/images/photo.jpg"></div>
+    </section>
+
+    <section class="container container--big">
+        <div class="infobox grid">
+            <h4><u>Банкетный зал 'Chalet'</u></h4>
+            <h5>
+                Республика Татарстан,<br>
+                Набережные Челны,<br>
+                Тукаевский район,<br>
+                микрорайон Первомайка, 38
+            </h5>
+            <h6>
+                <a href="https://yandex.ru/maps/-/CDRsZDmM">
+                    <button class="address-button">Показать на карте</button>
+                </a>
+            </h6>
+        </div>
+        <div class="infobox grid">
+            <h4><u>Дресс код</u></h4>
+            <h5>
+                Отсутствует.<br>
+                Однако, мы будем рады, если вы отдадите
+                предпочтение одежде в классическом стиле, а также просим дорогих дам воздержаться от белых нарядов.
+            </h5>
+            <h6></h6>
+        </div>
+        <div class="infobox grid">
+            <h4><u>Формат мероприятия</u></h4>
+            <h5>
+                Свадебная церемония предполагает участие только взрослых гостей.<br>
+                Пожалуйста, позаботьтесь о том, чтобы ваш ребенок остался в надежных руках.
+            </h5>
+            <h6></h6>
+        </div>
+    </section>
+
+    <script src="/scripts/parallax.js"></script>
+    <script>
+        new universalParallax().init({
+            speed: 4
+        });
+    </script>
+</body>
+
+</html>

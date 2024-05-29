@@ -1,0 +1,30 @@
+.address-button {
+    background-color: white;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    width: 70%;
+}
+
+.address-button:hover {
+    background-color: #f7fafa;
+}
+
+.address-button:focus {
+    border-color: pink;
+    -webkit-box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
